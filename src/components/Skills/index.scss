@@ -1,0 +1,70 @@
+.skill-container {
+    width: 100%;
+    height: 100%;
+   
+    position: absolute;
+    right: 0;
+    justify-content: center;
+    align-items: center;
+    
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 1.25rem; // Adjust grid gap as needed
+      transform: translateX(-100px);
+      transition: opacity 1s ease-in 0.2s, transform 1s cubic-bezier(0.34, 1.56, 0.64, 1);
+      max-width: 600px; // Add a max-width to prevent overflow
+    
+  
+    .skill-card {
+      border: 2px solid rgb(8, 145, 170);// border-cyan-600
+      position: relative;
+      min-width: 6rem; // Increase min-width
+      max-width: 6rem; // Increase max-width
+      background-color:none; // bg-gray-900
+      padding: 1rem; // Adjust padding as needed
+      border-radius: 0.5rem; // rounded-lg
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  
+      .skill-progress {
+        width:6rem; // Adjust size as needed
+        height: 6rem; // Adjust size as needed
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%; // rounded-full
+        background: conic-gradient(rgb(8, 145, 170) var(--skill-count), #ddd var(--skill-count)); // Use CSS variable for dynamic count
+  
+        .skill-logo {
+          font-size: 3rem; // Adjust size as needed
+          width: 4rem; // Adjust size as needed
+          height: 4rem; // Adjust size as needed
+          background-color: #06b6d4;// bg-gray-900
+          border-radius: 50%; // rounded-full
+          display: flex;
+          align-items: center;
+          justify-content: center;
+  
+          &:hover {
+            color:#ffd700; // text-cyan-600
+          }
+        }
+      }
+  
+      .skill-level {
+        font-size: 1.5rem; // Adjust size as needed
+        margin-top: 0.5rem; // Adjust margin as needed
+        text-align: center; // Center text
+      }
+    }
+  }
+  
+  .highlight {
+    color: #ffd700; // Yellow color for highlighting
+  }
+
+  .linkedin-link {
+    color: #ffd700; // LinkedIn blue color
+    text-decoration: underline;
+  }

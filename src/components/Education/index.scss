@@ -1,0 +1,50 @@
+.education {
+  width: 40%; // Adjust width as needed
+  height: 100%;
+  top: 0;
+  padding-top: 2%; // Reduce padding to make more space
+  margin-left: 0;
+  position: absolute;
+  right: 0;
+
+  .vertical-timeline-element--education {
+    .description {
+      background-color: #0d6efd;
+      color: #fff;
+      padding: 5px; // Reduce padding
+      border-radius: 5px;
+      margin: 5px 0; // Reduce margin
+      font-size: 0.8rem; // Reduce font size
+    }
+  }
+
+  .date {
+    color: #ffd700; 
+    font-weight: bold;
+    font-size: 0.8rem; // Reduce font size
+    margin-left: 10px; // Add space between the date and the icon
+  }
+
+  .vertical-timeline-element-content {
+    padding: 10px; // Reduce padding inside the element
+    font-size: 0.8rem; // Reduce font size
+  }
+
+  .vertical-timeline-element-icon {
+    width: 50px; // Set icon size
+    height: 50px; // Set icon size
+    margin-left: -25px; // Center the icon horizontally on the line
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: 100%; // Ensure the logo fits the icon size
+      height: 100%; // Ensure the logo fits the icon size
+    }
+  }
+
+  h2, small, p {
+    font-size: 0.8rem; // Adjust font size for all text elements
+  }
+}
